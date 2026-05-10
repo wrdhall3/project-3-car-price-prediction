@@ -29,7 +29,7 @@ def main(args):
     print("Registering ", args.model_name)
 
     # Step 1: Load the model from the specified path using `mlflow.sklearn.load_model` for further processing.  
-    model = mlflow.sklearn.load_model(args.model)
+    model = mlflow.sklearn.load_model(args.model_name)
 
 
     # Step 2: Log the loaded model in MLflow with the specified model name for versioning and tracking.  
