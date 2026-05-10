@@ -57,14 +57,14 @@ jobs:
         values: [10, 20, 30, 50]
       max_depth:
         type: choice  # Specify the type for max_depth
-        values: [None, 10, 20, 30, 50]  # Provide the values for max_depth
+        values: [5, 10, 15, 20]  # Provide the values for max_depth
     objective:
       goal: minimize
       primary_metric: MSE
     limits:
-      max_total_trials: 10
-      max_concurrent_trials: 5
-      timeout: 7200
+      max_total_trials: 8
+      max_concurrent_trials: 4
+      timeout: 1800
 
 
   register_model:
