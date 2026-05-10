@@ -39,7 +39,7 @@ def main(args):  # Write the function name for the main data preparation logic
 
 
     # Step 3: Save the training and testing datasets as CSV files in separate directories for easier access and organization.  
-    os.makedirs(args.args.train_data, exist_ok=True)  # Create directory for train_data
+    os.makedirs(args.train_data, exist_ok=True)  # Create directory for train_data
     os.makedirs(args.test_data, exist_ok=True)  # Create directory for test_data
     train_df.to_csv(os.path.join(args.train_data, "train.csv"), index=False)  # Name of the train data file
     test_df.to_csv(os.path.join(args.test_data, "test.csv"), index=False)  # Name of the test data file
